@@ -1,0 +1,46 @@
+<template>
+    <div style="background: rgba(85, 202, 30, 0)" class="wrapper">
+    <header class="header">Flight Crew</header>
+
+    <!--section class="content"-->
+    <div class="slds-grid slds-grid_vertical" >
+        <div style="background: rgba(30, 70, 202, 0)" class="slds-p-vertical_small slds-size_1-of-1">
+            <div class="slds-card ">
+                <c-topbar></c-topbar>
+            </div>
+            
+        </div>
+        
+        <div style="background: rgba(85, 202, 30, 0)" class="slds-size_2-of-3 slds-p-right_xx-small">
+            <div class="slds-card">
+                <c-mainlwc></c-mainlwc> 
+            </div>
+
+        </div>
+        <div class="slds-grid">
+            <div style="background: rgba(255, 192, 203, 0)" class="slds-p-vertical_small slds-size_2-of-3 slds-p-right_xx-small slds-p-left_none">
+                <div class="slds-card">
+                    <c-list onproductselected={handleProductSelected}></c-list>
+                </div>
+            </div>
+            <div style="background: rgba(52, 37, 121, 0)" class="slds-p-vertical_small slds-size_1-of-3 slds-p-left_xx-small slds-p-right_none">
+                <div class="slds-card">
+                    <c-detail product-id={selectedProductId}></c-detail>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!--div class="columns">
+            <main class="main" >
+                <c-mapa mapa_dec={mapMarkers}></c-mapa>
+
+                <lightning-badge label="test">test</lightning-badge>
+                    <c-list onproductselected={handleProductSelected}></c-list>            
+            </main>
+            <aside class="sidebar-second">
+                <c-detail product-id={selectedProductId}></c-detail>
+            </aside>
+        </div-->
+    <!--/section-->
+    </div>
+</template>

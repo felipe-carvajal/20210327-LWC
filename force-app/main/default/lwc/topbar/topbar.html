@@ -1,0 +1,17 @@
+<template>
+    <div class="slds-m-top_small slds-m-bottom_small">
+        <!-- Simple -->
+        <div class="slds-p-left_medium lgc-bg">
+
+            <lightning-button-icon-stateful icon-name="utility:anchor" size="large" selected={shipState} onclick={handleShipButtonClick} alternative-text="Ship" class="slds-m-left_xx-small"></lightning-button-icon-stateful>
+            <lightning-button-icon-stateful icon-name="utility:user" size="large" selected={crewState} onclick={handleCrewButtonClick} alternative-text="Crew" class="slds-m-left_xx-small"></lightning-button-icon-stateful>
+            <lightning-button-icon-stateful icon-name="utility:like" selected={likeState} onclick={handleLikeButtonClick} alternative-text="Like" class="slds-m-left_xx-small"></lightning-button-icon-stateful>
+            <lightning-button-icon-stateful icon-name="utility:answer" selected={answerState} onclick={handleAnswerButtonClick} alternative-text="Answer" class="slds-m-left_xx-small"></lightning-button-icon-stateful>
+        </div>
+    </div>
+
+
+            <!--lightning-button-icon-stateful icon-name="utility:like" disabled selected={likeStateDisabled} onclick={handleLikeButtonDisabledClick} alternative-text="Like"></lightning-button-icon-stateful>
+            <lightning-button-icon-stateful icon-name="utility:answer" disabled selected={answerStateDisabled} onclick={handleAnswerButtonDisabledClick} alternative-text="Answer" class="slds-m-left_xx-small"></lightning-button-icon-stateful-->
+
+</template>
